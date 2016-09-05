@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <style>
+      @import 'https://fonts.googleapis.com/css?family=Raleway:300';
+        body {
+          font-family: 'Raleway', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-image: url(assets/bg.jpg);
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          display: flex;
+          min-height: 100vh;
+          flex-direction: column;
+        }
+        main {
+          flex: 1 0 auto;
+        }
+        .container {
+          padding: 0 10px;
+          margin-top: 20px;
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+        }
+        .card {
+          width: 25%;
+          box-sizing: border-box;
+        }
+        @media(max-width: 1341px){
+          .card {
+            width: 50%;
+          }
+        }
+        @media(max-width: 600px){
+          .card {
+            width: 100%;
+          }
+        }
+        .card .card-container {
+          border: 10px solid;
+          border-color: rgba(255, 255, 255, 0);
+          display: flex;
+          flex-direction: column;
+          overflow: hidden;
+        }
+        .card img {
+          width: 100%;
+          z-index: 1;
+          transition: all 0.5s ease;
+        }
+        .card .card-content {
+          padding: 10px 20px;
+          background-color: rgba(0, 0, 0, 0.72);
+          color: white;
+          z-index: 5;
+          transition: all 0.5s ease;
+        }
+        .card:hover .card-content {
+          background-color: white;
+          color: black;
+        }
+        .card:hover img {
+          transform: scale(1.1);
+        }
+        .card .card-content span {
+          font-size: 2em;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      </style>
+      <main>
+        <div class="container">
+
+          <div class="card">
+            <div class="card-container">
+              <img src="assets/img.jpg" />
+              <div class="card-content">
+                <span>Korrasami - baby</span>
+                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-container">
+              <img src="assets/img.jpg" />
+              <div class="card-content">
+                <span>Korrasami - baby</span>
+                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-container">
+              <img src="assets/img.jpg" />
+              <div class="card-content">
+                <span>Korrasami - baby</span>
+                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-container">
+              <img src="assets/img.jpg" />
+              <div class="card-content">
+                <span>Korrasami - baby</span>
+                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </main>
+    </body>
+  </html>
