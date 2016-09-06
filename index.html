@@ -10,9 +10,9 @@
 
     <body>
       <style>
-      @import 'https://fonts.googleapis.com/css?family=Raleway:300';
+      @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
         body {
-          font-family: 'Raleway', sans-serif;
+          font-family: 'Open Sans', sans-serif;
           margin: 0;
           padding: 0;
           background-image: url(assets/bg.jpg);
@@ -25,6 +25,9 @@
         }
         main {
           flex: 1 0 auto;
+        }
+        p {
+          font-weight: 200;
         }
         .container {
           padding: 0 10px;
@@ -48,7 +51,7 @@
           }
         }
         .card .card-container {
-          border: 10px solid;
+          border: 5px solid;
           border-color: rgba(255, 255, 255, 0);
           display: flex;
           flex-direction: column;
@@ -60,8 +63,9 @@
           transition: all 0.5s ease;
         }
         .card .card-content {
+          min-height: 200px;
           padding: 10px 20px;
-          background-color: rgba(0, 0, 0, 0.72);
+          background-color: rgba(0, 0, 0, 0.42);
           color: white;
           z-index: 5;
           transition: all 0.5s ease;
@@ -74,9 +78,12 @@
           transform: scale(1.1);
         }
         .card .card-content span {
-          font-size: 2em;
-          font-weight: bold;
+          font-size: 1.7em;
+          font-weight: 500;
           text-transform: uppercase;
+        }
+        .card .card-content p {
+          margin-top: 10px;
         }
       </style>
       <main>
@@ -84,40 +91,30 @@
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/img.jpg" />
+              <img src="assets/card1.jpg" />
               <div class="card-content">
-                <span>Korrasami - baby</span>
-                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+                <span>Conquest</span>
+                <p>Experience our signature game mode Conquest. Capture and Hold Objectives on large scale maps.</p>
               </div>
             </div>
           </div>
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/img.jpg" />
+              <img src="assets/card2.jpg" />
               <div class="card-content">
-                <span>Korrasami - baby</span>
-                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+                <span>Rush</span>
+                <p>Experience our signature game mode Conquest. Capture and Hold Objectives on large scale maps.</p>
               </div>
             </div>
           </div>
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/img.jpg" />
+              <img src="assets/card3.jpg" />
               <div class="card-content">
-                <span>Korrasami - baby</span>
-                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <div class="card-container">
-              <img src="assets/img.jpg" />
-              <div class="card-content">
-                <span>Korrasami - baby</span>
-                <p>ehhehehehhehehe hehe heh eheheh hehe h e hehe</p>
+                <span>Domination</span>
+                <p>Capture and hold Objectives. Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
               </div>
             </div>
           </div>
