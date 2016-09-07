@@ -10,9 +10,9 @@
 
     <body>
       <style>
-      @import 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700';
+      @import 'https://fonts.googleapis.com/css?family=Catamaran:300,400,500,600,700';
         body {
-          font-family: 'Open Sans', sans-serif;
+          font-family: 'Catamaran', sans-serif;
           margin: 0;
           padding: 0;
           background-image: url(assets/bg.jpg);
@@ -29,6 +29,27 @@
         p {
           font-weight: 200;
         }
+        nav {
+          padding: 10px 0px;
+          margin-left: 15px;
+          border-bottom: 1px solid;
+          border-color: rgba(255, 255, 255, 0.25);
+        }
+        nav .nav-link {
+          font-size: 1.3em;
+          color: white;
+          text-transform: uppercase;
+          padding: 0 10px;
+          letter-spacing: 1px;
+          padding: 10px 0px;
+          margin-right: 15px;
+        }
+        nav .nav-link.active {
+          border-bottom: 1px solid white;
+        }
+        nav .nav-link:first-child {
+          padding-left: 0;
+        }
         .container {
           padding: 0 10px;
           margin-top: 20px;
@@ -40,14 +61,23 @@
           width: 25%;
           box-sizing: border-box;
         }
+        .card.small {
+          width: 12.5%;
+        }
         @media(max-width: 1341px){
           .card {
             width: 50%;
+          }
+          .card.small {
+            width: 25%;
           }
         }
         @media(max-width: 600px){
           .card {
             width: 100%;
+          }
+          .card.small {
+            width: 50%;
           }
         }
         .card .card-container {
@@ -57,10 +87,19 @@
           flex-direction: column;
           overflow: hidden;
         }
+        .card .card-img {
+          overflow: hidden;
+          height: 185px;
+        }
         .card img {
+          display: block;
           width: 100%;
           z-index: 1;
           transition: all 0.5s ease;
+        }
+        .card.small img {
+          height: 100%;
+          width: auto;
         }
         .card .card-content {
           min-height: 200px;
@@ -81,17 +120,37 @@
           font-size: 1.7em;
           font-weight: 500;
           text-transform: uppercase;
+          letter-spacing: 1px;
         }
         .card .card-content p {
           margin-top: 10px;
         }
       </style>
       <main>
+        <nav>
+          <a class="nav-link active">
+            home
+          </a>
+          <a class="nav-link">
+            multiplayer
+          </a>
+          <a class="nav-link">
+            campaign
+          </a>
+          <a class="nav-link">
+            soldier
+          </a>
+          <a class="nav-link">
+            more
+          </a>
+        </nav>
         <div class="container">
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/card1.jpg" />
+              <div class="card-img">
+                <img src="assets/card1.jpg" />
+              </div>
               <div class="card-content">
                 <span>Conquest</span>
                 <p>Experience our signature game mode Conquest. Capture and Hold Objectives on large scale maps.</p>
@@ -101,7 +160,9 @@
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/card2.jpg" />
+              <div class="card-img">
+                <img src="assets/card2.jpg" />
+              </div>
               <div class="card-content">
                 <span>Rush</span>
                 <p>Experience our signature game mode Conquest. Capture and Hold Objectives on large scale maps.</p>
@@ -111,7 +172,33 @@
 
           <div class="card">
             <div class="card-container">
-              <img src="assets/card3.jpg" />
+              <div class="card-img">
+                <img src="assets/card3.jpg" />
+              </div>
+              <div class="card-content">
+                <span>Domination</span>
+                <p>Capture and hold Objectives. Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card small">
+            <div class="card-container">
+              <div class="card-img">
+                <img src="assets/card4.jpg" />
+              </div>
+              <div class="card-content">
+                <span>Domination</span>
+                <p>Capture and hold Objectives. Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card small">
+            <div class="card-container">
+              <div class="card-img">
+                <img src="assets/card5.jpg" />
+              </div>
               <div class="card-content">
                 <span>Domination</span>
                 <p>Capture and hold Objectives. Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
