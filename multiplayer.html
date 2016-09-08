@@ -2,7 +2,7 @@
   <html>
     <head>
       <!--Import Google Icon Font-->
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
       <link href="style.css" rel="stylesheet">
 
@@ -13,11 +13,22 @@
 
     <body>
       <main>
+        <div class="side-nav-container">
+          <div class="side-nav">
+             <i class="material-icons">play_arrow</i>
+             <i class="material-icons">replay</i>
+             <i class="material-icons">add</i>
+             <div class="side-nav-bottom">
+               <i class="material-icons">power_settings_new</i>
+             </div>
+          </div>
+        </div>
+        <div class="main-container">
         <nav>
           <a href="index.html" class="nav-link">
             home
           </a>
-          <a class="nav-link active">
+          <a href="multiplayer.html" class="nav-link active">
             multiplayer
           </a>
           <a class="nav-link">
@@ -30,20 +41,11 @@
             more
           </a>
         </nav>
+
+
         <div class="container">
 
-          <div class="card small">
-            <div class="card-container">
-              <div class="card-img">
-                <img src="assets/card4.jpg" />
-              </div>
-              <div class="card-content">
-                <span>Domination</span>
-                <p>Capture and hold Objectives.</p>
-              </div>
-            </div>
-          </div>
-
+          <h2>Welcome to battlefieldUI - Get started soldier!</h2>
           <div class="card">
             <div class="card-container">
               <div class="card-img">
@@ -59,18 +61,6 @@
             </div>
           </div>
 
-          <div class="card small">
-            <div class="card-container">
-              <div class="card-img">
-                <img src="assets/card5.jpg" />
-              </div>
-              <div class="card-content">
-                <span>Domination</span>
-                <p>Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
-              </div>
-            </div>
-          </div>
-
           <div class="card">
             <div class="card-container">
               <div class="card-img">
@@ -79,26 +69,16 @@
               <div class="card-content">
                 <span>Rush</span>
                 <p>Experience our signature game mode Conquest. Capture and Hold Objectives on large scale maps.</p>
-                <div class="card-action hidden-action">
+                <div class="card-action">
                   <a href="">matchmake</a>
                 </div>
               </div>
             </div>
           </div>
 
-          <div class="card">
-            <div class="card-container">
-              <div class="card-img">
-                <img src="assets/card3.jpg" />
-              </div>
-              <div class="card-content">
-                <span>Domination</span>
-                <p>Capture and hold Objectives. Similar to the Conquest game mode, but faster pace and smaller maps without vehicles.</p>
-              </div>
-            </div>
-          </div>
-
         </div>
+
+      </div>
       </main>
     </body>
   </html>
