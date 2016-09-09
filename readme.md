@@ -4,7 +4,7 @@ A jab at recreating the menu UI of Battlefield 1 in the browser.
 ![battlefield1UI](https://raw.githubusercontent.com/lasseborly/images_rep/master/bf1_01.png)
 
 ## Demo
-[a link](https://arth101.github.io/battlefield1UI/)
+[## Demo](https://arth101.github.io/battlefield1UI/)
 
 ## Introduction
 This is a fan project that tries to recreate the Battlefield 1 UI with web technologies. The main menu UI elements are more or less exact derivatives from the games menu but some of the residing UI elements has been imagined in the vision of Battlefield 1's design. The design is made to be responsive and work across desktop, tablet, and mobile as well.
