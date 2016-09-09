@@ -49,6 +49,10 @@
   nav .nav-link:first-child {
     padding-left: 0;
   }
+  nav .nav-link.not-active {
+    color: rgba(255, 255, 255, 0.25);
+    pointer-events: none;
+  }
   .side-nav-container {
     min-width: 64px;
     border-right: 1px solid;
@@ -80,6 +84,7 @@
   }
   .main-container {
     padding: 10px;
+    padding-right: 0px;
     margin-bottom: 30px;
   }
   .container {
