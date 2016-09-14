@@ -10,10 +10,23 @@ A jab at recreating the menu UI of Battlefield 1 in the browser.
 This is a fan project that tries to recreate the Battlefield 1 UI with web technologies. The main menu UI elements are more or less exact derivatives from the games menu but some of the residing UI elements has been imagined in the vision of Battlefield 1's design. The design is made to be responsive and work across desktop, tablet, and mobile as well.
 
 ## Getting Started
-Download or clone this repo. You can work forward using the index.html that I've made, or you can just import the stylesheet to your own project. I would recommend taking a look at my files to get an idea of the layout required for some elements (primarily the sidebar).
+Download or clone this repo. You can work forward using the index.html in `example/` that I've made, or you can just import the stylesheet to your own project. I would recommend taking a look at my `example/` to get an idea of the layout required for some elements (primarily the sidebar).
 
 ## Usage
-___Coming Soon___
+
+Development:
+```css
+<link href="style.css" rel="stylesheet">
+```
+Production:
+```css
+<link href="style.min.css" rel="stylesheet">
+```
+
+You can also use the CDN:
+```css
+Coming Soon
+```
 
 ## Contributing
 Anyone can feel free to make pull requests or fork this repo.
@@ -30,3 +43,7 @@ If you find any other issues please report it
 * Nav menu is not yet responsive
 * BF1 like buttons not styled yet
 * The small card's image can be a little buggy on small screens
+
+## Changelog
+
+Coming Soon
