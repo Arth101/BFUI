@@ -12,8 +12,6 @@ This is a fan project that tries to recreate the Battlefield 1 UI with web techn
 ## Getting Started
 Download or clone this repo. You can work forward using the index.html in `example/` that I've made, or you can just import the stylesheet to your own project. I would recommend taking a look at my `example/` to get an idea of the layout required for some elements (primarily the sidebar).
 
-## Usage
-
 Development:
 ```css
 <link href="style.css" rel="stylesheet">
@@ -27,6 +25,10 @@ You can also use the CDN:
 ```css
 Coming Soon
 ```
+
+## Usage
+
+Coming Soon
 
 ## Contributing
 Anyone can feel free to make pull requests or fork this repo.
