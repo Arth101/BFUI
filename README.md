@@ -1,7 +1,7 @@
 # Battlefield 1 UI
 A jab at recreating the menu UI of Battlefield 1 in the browser.
 
-![battlefield1UI](https://raw.githubusercontent.com/lasseborly/images_rep/master/bf1_01.png)
+![battlefield1UI](https://raw.githubusercontent.com/lasseborly/images_rep/master/bf1_menu.gif)
 
 ## Demo
 [Right here soldier](https://arth101.github.io/battlefield1UI/example)
