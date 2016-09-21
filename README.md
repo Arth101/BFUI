@@ -45,7 +45,7 @@ If you find any other issues please report it
 
 * Nav menu is not yet responsive
 * BF1 like buttons not styled yet
-* The small card's image can be a little buggy on small screens
+* IE and Edge does not support object-fit which is used to keep the aspect ration of the card images
 
 ## Changelog
 
