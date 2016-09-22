@@ -237,3 +237,13 @@
     text-align: center;
     text-transform: uppercase;
   }
+
+  .welcome a.btn {
+    display: inline-block;
+  }
+
+  @media(max-width: 600px){
+    .welcome a.btn {
+      display: block;
+    }
+  }
