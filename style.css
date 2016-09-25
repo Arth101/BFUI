@@ -12,6 +12,9 @@
     flex-direction: column;
     color: white;
   }
+  body.altBg {
+    background-image: url(example/assets/bg1.jpg);
+  }
   main {
     flex: 1 0 auto;
     display: flex;
@@ -25,6 +28,12 @@
   }
   a:visited {
     color: inherit;
+  }
+  p a {
+    text-decoration: underline;
+  }
+  p a:hover {
+    color: #B86B3F;
   }
   nav {
     padding: 0px;
@@ -45,6 +54,10 @@
   }
   nav .nav-link.active {
     border-bottom: 1px solid white;
+  }
+  nav .nav-link:hover,
+  nav .nav-link.active {
+    text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8);
   }
   nav .nav-link:first-child {
     padding-left: 0;
@@ -207,10 +220,11 @@
   }
 
   a.btn {
-    background-color: rgba(0, 0, 0, 0.42);
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.42);
     color: white;
     font-weight: 600;
-    padding: 10px 70px;
+    padding: 10px 100px;
     border-radius: 1px;
     transition: all 0.5s ease;
   }
@@ -218,6 +232,7 @@
   a.btn:hover {
     background: white;
     color: black;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.42);
   }
 
   /* WELCOME SCREEN */
