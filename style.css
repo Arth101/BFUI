@@ -3,7 +3,7 @@
     font-family: 'Catamaran', sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url(example/assets/bg.jpg);
+    background: url('example/assets/bg.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     }
   }
   body.altBg {
-    background-image: url(example/assets/bg1.jpg);
+    background-image: url('example/assets/bg1.jpg');
   }
   main {
     flex: 1 0 auto;
