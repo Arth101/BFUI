@@ -3,7 +3,7 @@
     font-family: 'Catamaran', sans-serif;
     margin: 0;
     padding: 0;
-    background: url('example/assets/bg.jpg') no-repeat center center fixed;
+    background: url('assets/bg.jpg') no-repeat center center fixed;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,7 +18,7 @@
     }
   }
   body.altBg {
-    background-image: url('example/assets/bg1.jpg');
+    background-image: url('assets/bg1.jpg');
   }
   main {
     flex: 1 0 auto;
@@ -165,6 +165,7 @@
     padding: 10px;
     padding-right: 0px;
     margin-bottom: 30px;
+    width: 100%;
   }
   @media(max-width: 600px){
     .main-container {
@@ -318,6 +319,36 @@
     background: white;
     color: black;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.42);
+  }
+
+  /* TABLE */
+
+  table {
+    width: 100%;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: none;
+  }
+  thead {
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.50);
+  }
+  thead, tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+  }
+  td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+  tbody tr:hover {
+    background: white;
+  }
+  tbody tr:hover td {
+    color: black;
   }
 
   /* WELCOME SCREEN */
