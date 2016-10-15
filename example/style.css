@@ -378,3 +378,15 @@
       display: block;
     }
   }
+
+  /* COMPONENTS */
+  .components section {
+    width: 100%;
+  }
+  .components section h1 {
+    font-size: 2.5em;
+    width: 100%;
+    margin-left: 0;
+    border-bottom: 1px solid;
+    border-color: rgba(255, 255, 255, 0.25);
+  }
