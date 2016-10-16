@@ -444,7 +444,8 @@ input[type=search],
 textarea {
   padding: 12px;
   background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(255, 255, 255, 0.42);
+  border: 1px solid;
+  border-color: rgba(255, 255, 255, 0.42);
   color: white;
   margin-bottom: 10px;
   font-size: inherit;
@@ -456,4 +457,13 @@ textarea:focus {
      border:1px solid rgba(255, 255, 255, 0.52);
      -webkit-box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
      box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
- }
+}
+input:disabled {
+  background-color: rgba(255, 255, 255, 0.35);
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.55);
+}
+::-webkit-input-placeholder { color: rgba(255, 255, 255, 0.35); }
+::-moz-placeholder { color: rgba(255, 255, 255, 0.35); }
+:-ms-input-placeholder { color: rgba(255, 255, 255, 0.35); }
+:-moz-placeholder { color: rgba(255, 255, 255, 0.35); }
