@@ -424,3 +424,36 @@ table.highlight tbody tr:hover td {
   border-bottom: 1px solid;
   border-color: rgba(255, 255, 255, 0.25);
 }
+
+/* FORMS */
+label {
+  display: block;
+}
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea {
+  padding: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.42);
+  color: white;
+  margin-bottom: 10px;
+  font-size: inherit;
+  width: 100%;
+}
+input:focus,
+textarea:focus {
+     outline:none;
+     border:1px solid rgba(255, 255, 255, 0.52);
+     -webkit-box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
+     box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
+ }

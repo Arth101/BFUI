@@ -142,10 +142,74 @@
                   </tr>
                 </tbody>
               </table>
-
-
               <pre data-src="components/table.html"></pre>
+            </section>
 
+            <section>
+              <h1>Input Fields</h1>
+              <form class="col s12">
+                <div class="row">
+                  <label for="first_name">First Name</label>
+                  <input placeholder="Placeholder" id="first_name" type="text">
+                  <label for="first_name">First Name</label>
+                  <input id="last_name" type="text">
+                </div>
+                <div class="row">
+                  <label for="disabled">Disabled</label>
+                  <input disabled value="Disabled input" id="disabled" type="text">
+                </div>
+                <div class="row">
+                  <label for="password">Password</label>
+                  <input id="password" type="password">
+                </div>
+                <div class="row">
+                  <label for="email">Email</label>
+                  <input id="email" type="email">
+                </div>
+              </form>
+              <pre data-src="components/forms.html"></pre>
+
+              <h1>Textarea</h1>
+              <label for="icon_prefix2">Text area</label>
+              <textarea id="icon_prefix2"></textarea>
+
+              <h1>Select (coming soon)</h1>
+              <label>Browser Select</label>
+              <select>
+                <option value="" disabled selected>Choose your option</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+
+
+              <h1>Radio Buttons (coming soon)</h1>
+              <form action="#">
+                <p>
+                  <input name="group1" type="radio" id="test1" />
+                  <label for="test1">Red</label>
+                </p>
+                <p>
+                  <input name="group1" type="radio" id="test2" />
+                  <label for="test2">Yellow</label>
+                </p>
+                <p>
+                  <input class="with-gap" name="group1" type="radio" id="test3"  />
+                  <label for="test3">Green</label>
+                </p>
+                  <p>
+                    <input name="group1" type="radio" id="test4" disabled="disabled" />
+                    <label for="test4">Brown</label>
+                </p>
+              </form>
+
+              <h1>Checkboxes (coming soon)</h1>
+              <form action="#">
+                <p>
+                  <input type="checkbox" id="test5" />
+                  <label for="test5">Red</label>
+                </p>
+              </form>
             </section>
           </div>
 
