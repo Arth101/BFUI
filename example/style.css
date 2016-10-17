@@ -441,7 +441,8 @@ input[type=datetime-local],
 input[type=tel],
 input[type=number],
 input[type=search],
-textarea {
+textarea,
+select {
   padding: 12px;
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid;
@@ -452,11 +453,15 @@ textarea {
   width: 100%;
 }
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
      outline:none;
      border:1px solid rgba(255, 255, 255, 0.52);
      -webkit-box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
      box-shadow: 0px 0px 5px  rgba(255, 255, 255, 0.52);
+}
+option {
+  background-color: black;
 }
 input:disabled {
   background-color: rgba(255, 255, 255, 0.35);
@@ -467,3 +472,74 @@ input:disabled {
 ::-moz-placeholder { color: rgba(255, 255, 255, 0.35); }
 :-ms-input-placeholder { color: rgba(255, 255, 255, 0.35); }
 :-moz-placeholder { color: rgba(255, 255, 255, 0.35); }
+
+/* Radio Buttons */
+
+[type="radio"]:not(:checked), [type="radio"]:checked {
+  position: absolute;
+  left: -9999px;
+  opacity: 0;
+}
+
+[type="radio"]:not(:checked)+label, [type="radio"]:checked+label {
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  display: inline-block;
+  height: 25px;
+  line-height: 25px;
+  font-size: 1rem;
+  transition: .28s ease;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+[type="radio"]+label:before, [type="radio"]+label:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: 2px 4px;
+  width: 16px;
+  height: 16px;
+  z-index: 0;
+  transition: .28s ease;
+}
+
+[type="radio"]:not(:checked)+label:before, [type="radio"]:not(:checked)+label:after, [type="radio"]:checked+label:before, [type="radio"]:checked+label:after, [type="radio"]:checked+label:before, [type="radio"]:checked+label:after {
+  border-radius: 50%;
+}
+
+[type="radio"]+label:before,
+[type="radio"]+label:after {
+    border: 2px solid #fff;
+}
+
+[type="radio"]:not(:checked)+label:after {
+  z-index: -1;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+[type="radio"]:checked+label:after {
+  -webkit-transform: scale(0.5);
+  transform: scale(0.35);
+  background-color: #fff;
+  z-index: 0;
+  border: 2px solid #fff;
+}
+
+[type="radio"]:disabled+label {
+  color: rgba(255,255,255,0.26);
+}
+
+[type="radio"]:disabled:not(:checked)+label:before {
+  border-color: rgba(255,255,255,0.26);
+}
+
+[type="radio"]:disabled:not(:checked)+label:before, [type="radio"]:disabled:checked+label:before {
+  background-color: transparent;
+  border-color: rgba(255,255,255,0.26);
+}
